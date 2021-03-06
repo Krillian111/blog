@@ -1,0 +1,57 @@
+
+
+
+name: Build + Deploy to S3
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          
+      - name: npm install, build
+        run: |
+          npm install
+          npm run build
+          
+      - name: package
+        run: |
+          tar -czf public.tar.gz public
+          
+      - name: upload public-dir
+        uses: actions/upload-artifact@v2
+        with:
+          name: public-dir
+          path: public.tar.gz
+          
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: download public-dir
+        uses: actions/download-artifact@v2
+        with:
+          name: public-dir
+          
+      - name: unpack
+        run: |
+          tar -xf public.tar.gz
+          
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Copy files to the test website with the AWS CLI
+        env:
+          bucket: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          aws s3 sync public "s3://$bucket" --delete
