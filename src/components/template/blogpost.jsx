@@ -2,28 +2,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Menu from './menu';
+import Menu from '../menu';
+import PageTemplate from './page-template';
 
-export default function BlogTemplate({
+export default function Blogpost({
   data,
 }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <main>
+    <PageTemplate>
       <Menu />
       <article>
-        <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <section
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </article>
-    </main>
+    </PageTemplate>
   );
 }
 
-BlogTemplate.propTypes = {
+Blogpost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: {
       html: PropTypes.string,

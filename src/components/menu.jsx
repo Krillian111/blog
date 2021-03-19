@@ -1,35 +1,37 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import colors from '../style/colors';
+
+const StyledMenuBar = styled.nav`
+  display: flex;
+`;
+
+const StyledMenuItem = styled.span`
+  a {
+    color: ${colors.primary};  
+    background-color: ${colors.secondary};
+    text-decoration: none;
+    padding: 10px; 
+    &:hover {
+      color: ${colors.secondary}; 
+      background-color: ${colors.highlight}; 
+    }
+  }
+`;
 
 export default function Menu() {
-  const data = useStaticQuery(graphql`
-    query MenuQuery {
-      allMarkdownRemark(
-        filter: {frontmatter: {type: {eq: "blogpost"}}}
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 100
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            } 
-          }
-        }
-      }
-    }
-  `);
-  const blogposts = data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter.slug);
+  const menuItems = [
+    { title: 'Home', route: '/' },
+    { title: 'About me', route: '/about-me' },
+  ];
   return (
-    <nav>
-      <ul>
-        <li><Link to="/about-me">About me</Link></li>
-      </ul>
-      <ol>
-        {blogposts.map((slug) => (
-          <li><Link to={slug}>{slug}</Link></li>
-        ))}
-      </ol>
-    </nav>
+    <StyledMenuBar>
+      {menuItems.map(({ title, route }) => (
+        <StyledMenuItem>
+          <Link to={route}>{title}</Link>
+        </StyledMenuItem>
+      ))}
+    </StyledMenuBar>
   );
 }
