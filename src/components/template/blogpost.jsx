@@ -2,8 +2,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Menu from '../menu';
+import styled from 'styled-components';
 import PageTemplate from './page-template';
+
+const StyledPost = styled.section``;
 
 export default function Blogpost({
   data,
@@ -12,13 +14,12 @@ export default function Blogpost({
   const { frontmatter, html } = markdownRemark;
   return (
     <PageTemplate>
-      <Menu />
       <article>
-        <h2>{frontmatter.date}</h2>
-        <section
+        <StyledPost
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </article>
+      <h2>{frontmatter.date}</h2>
     </PageTemplate>
   );
 }

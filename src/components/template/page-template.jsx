@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import styled from 'styled-components';
 import colors from '../../style/colors';
+import Menu from '../menu';
 
 const StyledMain = styled.main`
   height: 100%;
@@ -17,6 +18,7 @@ export default function PageTemplate({ children }) {
   // <title>Krillian&apos;s blog</title>
   return (
     <StyledMain>
+      <Menu />
       {children}
     </StyledMain>
   );

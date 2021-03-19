@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Menu from '../components/menu';
 import ArticleList from '../components/article-list';
 import PageTemplate from '../components/template/page-template';
 
@@ -34,7 +33,6 @@ export default function IndexPage() {
     }));
   return (
     <PageTemplate>
-      <Menu />
       <h1>Under construction</h1>
       <p>Setting everything up so you can read the tangents I am about to go off on.</p>
       <ArticleList articles={blogposts} />
