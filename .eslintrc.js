@@ -1,23 +1,17 @@
 module.exports = {
-  ignorePatterns: ['gatsby-config.js'],
+  ignorePatterns: ["gatsby-config.js"],
   env: {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ["plugin:react/recommended", "airbnb", "prettier"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-  ],
-  rules: {
-  },
+  plugins: ["react"],
+  rules: {},
 };

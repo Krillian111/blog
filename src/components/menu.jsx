@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import colors from '../style/colors';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import colors from "../style/colors";
 
 const StyledMenuBar = styled.nav`
   display: flex;
@@ -9,21 +9,21 @@ const StyledMenuBar = styled.nav`
 
 const StyledMenuItem = styled.span`
   a {
-    color: ${colors.primary};  
+    color: ${colors.primary};
     background-color: ${colors.secondary};
     text-decoration: none;
-    padding: 10px; 
+    padding: 10px;
     &:hover {
-      color: ${colors.secondary}; 
-      background-color: ${colors.highlight}; 
+      color: ${colors.secondary};
+      background-color: ${colors.highlight};
     }
   }
 `;
 
 export default function Menu() {
   const menuItems = [
-    { title: 'Home', route: '/' },
-    { title: 'About me', route: '/about-me' },
+    { title: "Home", route: "/" },
+    { title: "About me", route: "/about-me" },
   ];
   return (
     <StyledMenuBar>

@@ -1,14 +1,14 @@
-import * as React from 'react';
-import * as PropTypes from 'prop-types';
-import styled from 'styled-components';
-import colors from '../../style/colors';
-import Menu from '../menu';
+import * as React from "react";
+import * as PropTypes from "prop-types";
+import styled from "styled-components";
+import colors from "../../style/colors";
+import Menu from "../menu";
 
 const StyledMain = styled.main`
   height: 100%;
   color: #232129;
   padding: 10px;
-  fontFamily: -apple-system, Roboto, sans-serif, serif;
+  fontfamily: -apple-system, Roboto, sans-serif, serif;
   background-color: ${colors.secondary};
   color: ${colors.primary};
 `;

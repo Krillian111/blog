@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import ArticleList from '../components/article-list';
-import PageTemplate from '../components/template/page-template';
+import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import ArticleList from "../components/article-list";
+import PageTemplate from "../components/template/page-template";
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
     query MenuQuery {
       allMarkdownRemark(
-        filter: {frontmatter: {type: {eq: "blogpost"}}}
+        filter: { frontmatter: { type: { eq: "blogpost" } } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 100
       ) {
@@ -17,7 +17,7 @@ export default function IndexPage() {
               slug
               title
               date(formatString: "MMMM DD, YYYY")
-            } 
+            }
           }
         }
       }
@@ -34,7 +34,10 @@ export default function IndexPage() {
   return (
     <PageTemplate>
       <h1>Under construction</h1>
-      <p>Setting everything up so you can read the tangents I am about to go off on.</p>
+      <p>
+        Setting everything up so you can read the tangents I am about to go off
+        on.
+      </p>
       <ArticleList articles={blogposts} />
     </PageTemplate>
   );
