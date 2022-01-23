@@ -25,11 +25,10 @@ export default function IndexPage() {
   `);
   const blogposts = data.allMarkdownRemark.edges
     .map((edge) => edge.node.frontmatter)
-    .map(({ slug, title, date }, index) => ({
+    .map(({ slug, title, date }) => ({
       route: slug,
       title,
       date,
-      preview: `preview${index}`,
     }));
   return (
     <PageTemplate>

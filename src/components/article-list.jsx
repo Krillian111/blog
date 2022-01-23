@@ -27,11 +27,10 @@ export default function ArticleList({ articles }) {
   return (
     <div>
       <h2>Blogposts</h2>
-      {articles.map(({ route, title, date, preview }) => (
+      {articles.map(({ route, title, date }) => (
         <StyledArticle>
           <Link to={route}>
             <h3>{`${title} (${date})`}</h3>
-            <p>{preview}</p>
           </Link>
         </StyledArticle>
       ))}
