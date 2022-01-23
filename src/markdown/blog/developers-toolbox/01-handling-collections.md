@@ -1,16 +1,16 @@
 ---
-slug: "/blog/programmers-toolbox/handling-collections"
+slug: "/blog/developers-toolbox/handling-collections"
 date: "2021-03-06"
 type: "blogpost"
 title: "Handling collections"
-tags: ["functional programming", "programmers toolbox"]
+tags: ["functional programming", "developers toolbox"]
 ---
 
-# Programmers Toolbox 1 - Handling collections
+# Developers Toolbox 1 - Handling collections
 
 ## Introduction
 
-When I started out as a programmer I dismissed functional concepts as overly theoretic and impractical. After all every toaster was running Java 7 or older, right? As I didn't study computer science, my first real contact with it was when my company at the time adopted Java 8 which introduced lambda expressions. Those sneaky arrow functions confused the hell out of me, and it took me quite a while to see the value in these concepts which obviously were adopted by other languages a long time ago.
+When I started out as a developer I dismissed functional concepts as overly theoretic and impractical. After all every toaster was running Java 7 or older, right? As I didn't study computer science, my first real contact with it was when my company at the time adopted Java 8 which introduced lambda expressions. Those sneaky arrow functions confused the hell out of me, and it took me quite a while to see the value in these concepts which obviously were adopted by other languages a long time ago.
 
 My goal is to shine some light on very practical applications of these functional concepts to help you with your everyday imperative code that you can use today. Baby steps. No Haskell, no ten page explanations what monads are. I'll use JavaScript for the examples but this can be transferred to any language that provides the basic functionality of `map/reduce/filter` which is almost all of them by now.
 We will start out with how to handle standard operations on collections which is something we all need to do every day.

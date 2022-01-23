@@ -1,12 +1,12 @@
 ---
-slug: "/blog/programmers-toolbox/introduction"
+slug: "/blog/developers-toolbox/introduction"
 date: "2021-03-06"
 type: "blogpost"
-title: "Programmers Toolbox Series"
-tags: ["programmers toolbox"]
+title: "Developers Toolbox Series"
+tags: ["developers toolbox"]
 ---
 
-# Programmers Toolbox Series
+# Developers Toolbox Series
 
 ## Introduction
 
