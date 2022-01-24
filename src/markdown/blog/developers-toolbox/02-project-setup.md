@@ -1,6 +1,6 @@
 ---
 slug: "/blog/developers-toolbox/project-setup"
-date: "202-01-24"
+date: "2022-01-24"
 type: "blogpost"
 title: "Backend project setup - checklist"
 tags: ["developers toolbox", "setup", "fullstack", "backend"]
