@@ -26,12 +26,13 @@ const StyledArticle = styled.article`
 export default function ArticleList({ articles }) {
   return (
     <div>
-      <h2>Blogposts</h2>
+      <h2>Blog</h2>
       {articles.map(({ route, title, date }) => (
         <StyledArticle>
           <Link to={route}>
-            <h3>{`${title} (${date})`}</h3>
+            <h3>{title}</h3>
           </Link>
+          <h4>{date}</h4>
         </StyledArticle>
       ))}
     </div>

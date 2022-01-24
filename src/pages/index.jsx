@@ -32,11 +32,6 @@ export default function IndexPage() {
     }));
   return (
     <PageTemplate>
-      <h1>Under construction</h1>
-      <p>
-        Setting everything up so you can read the tangents I am about to go off
-        on.
-      </p>
       <ArticleList articles={blogposts} />
     </PageTemplate>
   );

@@ -15,6 +15,9 @@ const StyledMain = styled.main`
   height: 100%;
   padding: 10px;
   color: ${colors.primary};
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export default function PageTemplate({ children }) {

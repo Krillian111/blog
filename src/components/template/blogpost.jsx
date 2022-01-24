@@ -15,7 +15,7 @@ export default function Blogpost({ data }) {
       <article>
         <StyledPost dangerouslySetInnerHTML={{ __html: html }} />
       </article>
-      <h2>{frontmatter.date}</h2>
+      <h4>{frontmatter.date}</h4>
     </PageTemplate>
   );
 }
