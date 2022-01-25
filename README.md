@@ -37,3 +37,5 @@ My personal website built with gatsby.
   - mockoon
   - hstr
   - volta
+  - tilix
+  - albert
