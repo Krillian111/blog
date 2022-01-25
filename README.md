@@ -4,6 +4,14 @@ My personal website built with gatsby.
 
 ### TODO
 
+#### Design
+
+- syntax highlighting
+- footer
+- pretty title bar
+- nicer font
+- clean up posts
+
 #### Posts
 
 - CLI Tools
@@ -19,6 +27,7 @@ My personal website built with gatsby.
   - TDD
   - event loop (JS)
   - file descriptor/stdin/stdout/stderr
+  - docker
 - Tool spotlight
   - ngrok
   - mockoon
