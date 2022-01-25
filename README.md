@@ -4,6 +4,10 @@ My personal website built with gatsby.
 
 ### TODO
 
+#### Coding
+
+- setup infrastructure
+
 #### Design
 
 - syntax highlighting
