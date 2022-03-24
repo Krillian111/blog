@@ -39,3 +39,20 @@ My personal website built with gatsby.
   - volta
   - tilix
   - albert
+
+#### Resources to read
+
+- https://nabrdalik.dev/talks/
+- https://blog.starburst.io/data-mesh-the-answer-to-the-data-warehouse-hypocrisy
+- [Event Sourcing You are doing it wrong by David Schmitz](https://www.youtube.com/watch?v=GzrZworHpIk)
+
+#### Potential books to read
+
+- From [Jakub Nabrdalik](https://jakubn.gitlab.io/wish-i-knew-architecture/#66)
+  - Software Architecture for Developers - Simon Brown
+  - Fundamentals of Software Architecture: An Engineering Apporach - Mark Richards, Neal Ford
+  - Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures - Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+  - Designing Event-Driven Systems - Ben Stopford
+  - Reactive Design Patterns - Roland Kuhn Dr.
+  - Team Topologies - Matthew Skelton, Manuel Pais
+  - Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans
