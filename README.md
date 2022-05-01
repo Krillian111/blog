@@ -40,11 +40,17 @@ My personal website built with gatsby.
   - tilix
   - albert
 
-#### Resources to read
+#### Resources to read/check out
 
-- https://nabrdalik.dev/talks/
-- https://blog.starburst.io/data-mesh-the-answer-to-the-data-warehouse-hypocrisy
-- [Event Sourcing You are doing it wrong by David Schmitz](https://www.youtube.com/watch?v=GzrZworHpIk)
+- Architecture
+  - https://nabrdalik.dev/talks/
+  - https://blog.starburst.io/data-mesh-the-answer-to-the-data-warehouse-hypocrisy
+  - [Event Sourcing You are doing it wrong by David Schmitz](https://www.youtube.com/watch?v=GzrZworHpIk)
+  - Moldable development: https://www.youtube.com/watch?app=desktop&v=Pot9GnHFOVU&feature=youtu.be
+- DevOps
+  - videos? https://www.youtube.com/c/thetips4you/videos?app=desktop
+  - Kodekloud: https://kodekloud.com/
+  - Best Practices about keeping credentials safe in a CI/CD environment, e.g. to protect yourself against supply chain attacks as a hijacked package would have access to environment variables. So even if you use secrets etc. you are not protected against this attack vector.
 
 #### Potential books to read
 
@@ -56,3 +62,13 @@ My personal website built with gatsby.
   - Reactive Design Patterns - Roland Kuhn Dr.
   - Team Topologies - Matthew Skelton, Manuel Pais
   - Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans
+
+#### Software to check out when building my stuff
+
+- [Hoppscotch](https://hoppscotch.io/) as Postman alternative?
+- [SuperTokens](https://supertokens.com/) for authentication?
+
+#### Projects I might want to tackle
+
+- JIRA markup to Markdown converter CLI
+- TODO list app to try out kubernetes/minikube and potentially self host my TODOs

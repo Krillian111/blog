@@ -13,6 +13,9 @@ tags: ["architecture"]
 - Jakub Nabrdalik - What I wish I knew when I started designing systems years ago
   - [Talk on YouTube](https://www.youtube.com/watch?v=1HJJhGHC2A4&feature=youtu.be)
   - [Slides](https://jakubn.gitlab.io/wish-i-knew-architecture/#1)
+- Simon Brown - Software Architecture for Developers
+  - [Ebook](https://leanpub.com/software-architecture-for-developers)
+  - Very insightful book about getting started with software architecture. The author kept it concise and informative.
 
 ## Specifics
 
