@@ -34,6 +34,12 @@ tags: ["architecture"]
 - [Cracking the Docker CLI](https://iximiuz.com/en/posts/containers-101-container-mgmt-commands/)
   - Overview of docker CLI and how the different commands relate to each other.
   - For this article it is good to have run into some of the pitfalls of docker before. This way you can go back mentally and understand why certain things happened the way they did.
+- [Containers vs Pods](https://iximiuz.com/en/posts/containers-vs-pods/)
+  - At the time of reading I was trying to get a better understanding of kubernetes, given that I have a decent enough grasp on docker/containers to get around at work without big issues. It was very enlightning to read this is as a start.
+- [Journey From Containerization To Orchestration And Beyond](https://iximiuz.com/en/posts/journey-from-containerization-to-orchestration-and-beyond/#container-runtimes)
+  - Very interesting article about the different puzzle pieces that make up a container orchestration tools. Starting at the very bottom with `runc` using basic linux building blocks to create containers, over container management via `containerd` or `cri-o` up to the more known players like `docker`/`dockerd` and `kubelet`.
+  - It touches on what a runtime shim is and why it is necessary.
+  - It gives a nice historical overview of the different projects in the container ecosystem.
 
 ## Language articles
 
