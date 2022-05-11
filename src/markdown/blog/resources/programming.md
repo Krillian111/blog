@@ -41,6 +41,12 @@ tags: ["architecture"]
   - It touches on what a runtime shim is and why it is necessary.
   - It gives a nice historical overview of the different projects in the container ecosystem.
 
+## Linux basics
+
+- [Collection of helpful bash commands](https://github.com/onceupon/Bash-Oneliner)
+  - It can be helpful to skim this once to become aware of certain commands or techniques.
+  - Obviously not an exhaustive list and slightly skewed towards data processing.
+
 ## Language articles
 
 - [Issues with Golang](https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang)
