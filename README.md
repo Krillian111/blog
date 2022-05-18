@@ -52,6 +52,11 @@ My personal website built with gatsby.
   - Kodekloud: https://kodekloud.com/
   - Best Practices about keeping credentials safe in a CI/CD environment, e.g. to protect yourself against supply chain attacks as a hijacked package would have access to environment variables. So even if you use secrets etc. you are not protected against this attack vector.
 
+#### Tools to test
+- TODO management
+  - vimwiki
+  - taskwarrior
+
 #### Potential books to read
 
 - From [Jakub Nabrdalik](https://jakubn.gitlab.io/wish-i-knew-architecture/#66)
