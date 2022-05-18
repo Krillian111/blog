@@ -46,6 +46,11 @@ tags: ["architecture"]
 - [Collection of helpful bash commands](https://github.com/onceupon/Bash-Oneliner)
   - It can be helpful to skim this once to become aware of certain commands or techniques.
   - Obviously not an exhaustive list and slightly skewed towards data processing.
+- [The TTY demistified](https://www.linusakesson.net/programming/tty/index.php)
+  - Diving deeper into the details of the TTY, shells and how everything ties together with process states and signals.
+- Process management basics
+  - `man bash` "JOB CONTROL" which also contains documentation of `fg`, `bg`, `jobs`, `disown`
+  - [Simplified guide](https://www.webservertalk.com/disown)
 
 ## Language articles
 
