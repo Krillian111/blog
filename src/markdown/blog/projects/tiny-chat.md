@@ -1,3 +1,7 @@
+---
+slug: "/blog/projects/tiny-chat"
+---
+
 # tiny-chat
 
 Inspired by [tinyprojects.dev](https://tinyprojects.dev/) I wanted to build a very simplified browser chat client. The goal is not to monetize anything but to double check that I am not missing any of the skills involved in doing so.

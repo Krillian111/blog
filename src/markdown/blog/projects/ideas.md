@@ -1,3 +1,7 @@
+---
+slug: "/blog/projects/ideas"
+---
+
 # Projects ideas
 
 - JIRA markup to Markdown converter CLI to avoid having to remember the JIRA syntax
