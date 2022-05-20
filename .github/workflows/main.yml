@@ -12,9 +12,11 @@ jobs:
         with:
           node-version: "14"
 
-      - name: npm install, build
+      - name: check and build
         run: |
-          npm install
+          npm ci
+          npm run format:check
+          npm run lint:check
           npm run build
 
       - name: package

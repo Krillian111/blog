@@ -4,14 +4,13 @@
   "private": true,
   "description": "Krillian's Blog",
   "scripts": {
-    "format": "node_modules/.bin/prettier --write --ignore-path .gitignore .",
-    "lint": "node_modules/.bin/eslint src",
-    "lint:fix": "npm run lint  -- --fix",
-    "gatsby": "node_modules/.bin/gatsby",
-    "develop": "npm run gatsby -- develop",
-    "build": "npm run gatsby -- build",
-    "serve": "npm run gatsby -- serve",
-    "clean": "npm run gatsby -- clean"
+    "format:check": "prettier . --ignore-path .gitignore --check",
+    "format": "npm run format:check -- --write",
+    "lint:check": "eslint src --max-warnings 0",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
