@@ -73,8 +73,4 @@ My personal website built with gatsby.
 - [Hoppscotch](https://hoppscotch.io/) as Postman alternative?
 - [SuperTokens](https://supertokens.com/) for authentication?
 
-#### Projects I might want to tackle
 
-- JIRA markup to Markdown converter CLI
-- TODO list app to try out kubernetes/minikube and potentially self host my TODOs
-- play around with the worker pool in node and webworkers in the browser, e.g. for logging?
