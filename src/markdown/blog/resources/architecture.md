@@ -1,12 +1,11 @@
 ---
 slug: "/blog/resources/architecture"
-date: "2022-03-24"
-type: "blogpost"
-title: "Learning about architecture"
+type: "resources"
+title: "Web application architecture"
 tags: ["architecture"]
 ---
 
-# Learning about architecture
+# Web application architecture
 
 ## General
 

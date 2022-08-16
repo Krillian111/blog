@@ -4,7 +4,6 @@ import PageTemplate from "../components/template/page-template";
 
 const NotFoundPage = () => (
   <PageTemplate>
-    <title>Not found</title>
     <h1>Page not found</h1>
     <p>
       Sorry{" "}

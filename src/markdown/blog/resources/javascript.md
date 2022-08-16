@@ -1,12 +1,11 @@
 ---
 slug: "/blog/resources/javascript"
-date: "2022-05-01"
-type: "blogpost"
-title: "Learning about JavaScript"
+type: "resources"
+title: "JavaScript and TypeScript"
 tags: ["javascript", "typescript", "node"]
 ---
 
-# Learning about JavaScript
+# JavaScript and TypeScript
 
 ## Node
 

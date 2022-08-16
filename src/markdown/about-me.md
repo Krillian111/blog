@@ -4,16 +4,18 @@ slug: "/about-me"
 
 # About me
 
-- Fullstack developer from Germany with a preference for Backend and DevOps.
-- Got into programming during my undergrad while doing an internship. Continued to work during my graduate degree in mathematics. Never looked back.
+- Fullstack developer from Germany with a preference for Backend and DevOps. Moved to the US with my wife in 2021.
+- Got into programming during an undergrad internship in 2014. Continued to develop web applications during my graduate degree in mathematics. Never looked back.
 - I like getting to the bottom of things. I don't get frustrated easily when things get more complicated. Reading specifications or documentation is the main way I learn things, not a big fan of just superficially learning from videos or StackOverflow. They are more an inspiration what to look into, not the end of the story.
+- I am interested in anything related to the web platform, i.e. web applications, infrastructure, network, system design, WASM, ...
 
 ## Trivia
 
-- Enjoy hiking with my wife, cycling, good food and beer.
-- I cycled from Victoria to Toronto while camping in a tent.
+- Most people call me Bow
+- I enjoy hiking with my wife, cycling, good food and beer.
+- I cycled over 6000km from Victoria, BC to Toronto while camping in a tent.
 
 ## Contact
 
-- Github: [Krillian111](https://github.com/Krillian111)
-- LinkedIn: TODO
+- [Github](https://github.com/Krillian111)
+- [LinkedIn](https://www.linkedin.com/in/kristof-bauer-08baba233/)

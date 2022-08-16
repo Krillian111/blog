@@ -7,8 +7,7 @@ export default function IndexPage() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "blogpost" } } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { type: { eq: "resources" } } }
         limit: 15
       ) {
         edges {
@@ -16,7 +15,6 @@ export default function IndexPage() {
             frontmatter {
               slug
               title
-              date(formatString: "MMMM DD, YYYY")
               tags
             }
           }
@@ -24,19 +22,18 @@ export default function IndexPage() {
       }
     }
   `);
-  const blogposts = data.allMarkdownRemark.edges
+  const resourceLists = data.allMarkdownRemark.edges
     .map((edge) => edge.node.frontmatter)
-    .map(({ slug, title, date, tags }) => ({
+    .map(({ slug, title, tags }) => ({
       route: slug,
       title,
-      date,
       tags,
     }));
   return (
     <PageTemplate>
       <section>
-        <h1>Articles</h1>
-        <ArticleList articles={blogposts} />
+        <h1>Resources</h1>
+        <ArticleList articles={resourceLists} />
       </section>
     </PageTemplate>
   );

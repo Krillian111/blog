@@ -7,13 +7,29 @@ import Menu from "../menu";
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${colors.secondary};
-    fontfamily: -apple-system, Roboto, sans-serif, serif;
+    font-family: sans-serif;
   }
   a {
     color: ${colors.highlightPrimary};
     &:hover {
       color: ${colors.highlightSecondary}
     }
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
 `;
 
 const StyledMain = styled.main`
@@ -26,10 +42,9 @@ const StyledMain = styled.main`
 `;
 
 export default function PageTemplate({ children }) {
-  // TODO: put into meta
-  // <title>Krillian&apos;s blog</title>
   return (
     <StyledMain>
+      <title>Krillian&apos;s Blog</title>
       <GlobalStyle />
       <Menu />
       {children}

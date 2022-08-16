@@ -2,8 +2,8 @@
 slug: "/blog/developers-toolbox/handling-collections"
 date: "2021-03-06"
 type: "blogpost"
-title: "Handling collections"
-tags: ["functional programming", "developers toolbox"]
+title: "Handling collections (DT 1)"
+tags: ["functional-programming", "developers-toolbox"]
 ---
 
 # Developers Toolbox 1 - Handling collections
@@ -15,7 +15,7 @@ When I started out as a developer I dismissed functional concepts as overly theo
 My goal is to shine some light on very practical applications of these functional concepts to help you with your everyday imperative code that you can use today. Baby steps. No Haskell, no ten page explanations what monads are. I'll use JavaScript for the examples but this can be transferred to any language that provides the basic functionality of `map/reduce/filter` which is almost all of them by now.
 We will start out with how to handle standard operations on collections which is something we all need to do every day.
 
-## Extracting a subset of elements aka `filter` (n -> m)
+## Extracting a subset of elements aka `filter` (n &rarr; m)
 
 In order to extract a subset of elements from a collection, the imperative algorithm is straightforward. We initialize a result collection which we will put all the desired elements in. We iterate over the collection, check the condition and add to the target collection if the condition is satisfied.
 
@@ -44,7 +44,7 @@ Does this algorithm change, if the data we iterate over, looks any different? No
 const blogposts = pages.filter((page) => page.type === "blogpost");
 ```
 
-## Computing something new from each element aka `map` (n -> n)
+## Computing something new from each element aka `map` (n &rarr; n)
 
 If we want to compute something for each element of the collection, we again know how to do it. We iterate over the collection, and add the computed result of each element to some target collection.
 
@@ -69,7 +69,7 @@ Again if we wanted to compute something else, all we would change is the lines i
 const titles = pages.map((page) => page.title);
 ```
 
-## Computing a single value from all values of a collection aka `reduce` (n -> 1)
+## Computing a single value from all values of a collection aka `reduce` (n &rarr; 1)
 
 The third common task regarding collections is condensing all elements into a single value, e.g. summing up a list of integers or converting a collection into a map. The algorithm here is only slightly different, initialize something to accumulate the result and do the accumulation in the for loop for each element.
 
@@ -175,9 +175,12 @@ The functions `map, filter, reduce` are the first step into functional programmi
 ### Computational efficiency varies
 
 How efficient these functions are, e.g. in comparison to traditional loops, highly depends on the language and runtime and how the execution is optimized. In JavaScript/V8, a chained `map` + `filter` will lead to multiple iterations over the collection which could be avoided by replacing both steps with a single loop. However, this is a relatively shallow analysis of the problem.
+
 The issue is that this has primarily to do with the fact that folding these two steps is generaly not equivalent due to side effects. If a log is written in both the `map` and `filter` step, folding them together will lead to the logs being written in a different order.
 There are different ways to deal with these potential inefficiencies.
+
 As an example, the Java 8 Stream API has a higher focus on performance and supports parallelization with a simple flag which can make using this paradigm even more efficient than traditional loops (assuming we do not spend the overhead of manually coding the parallization). This comes at the cost of a slightly more complex API (read up on [intermediate and terminal operations in the Java Docs](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)) and restrictions w.r.t. what can be done in the callbacks to stay thread-safe.
+
 Another way to deal with this can be observed in purely functional languages like Haskell. Due to the lack of side effects, [folding certain function calls into one can be proven to be equivalent](https://wiki.haskell.org/Short_cut_fusion), thus the compiler does it out of the box.
 In JavaScript a way to deal with these problems can be to dig a little deeper into the functional toolbox and use concepts like [transducers](https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d).
 

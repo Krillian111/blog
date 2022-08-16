@@ -1,9 +1,8 @@
 ---
 slug: "/blog/resources/interviews"
-date: "2022-05-13"
-type: "blogpost"
+type: "resources"
 title: "Preaparing for interviews"
-tags: ["architecture"]
+tags: ["interviews"]
 ---
 
 # Preparing for interviews

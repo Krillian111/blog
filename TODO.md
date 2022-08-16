@@ -6,8 +6,8 @@
 
 ## Design
 
+- allow browsing by tag
 - syntax highlighting
-- footer
 - pretty title bar
 - nicer font
 - clean up posts

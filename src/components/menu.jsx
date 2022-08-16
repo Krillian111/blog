@@ -5,13 +5,18 @@ import colors from "../style/colors";
 
 const StyledMenuBar = styled.nav`
   display: flex;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: ${colors.highlightPrimary};
 `;
 
 const StyledMenuItem = styled.span`
   a {
+    font-size: 20px;
     color: ${colors.primary};
-    background-color: ${colors.secondary};
     text-decoration: none;
+    background-color: ${colors.secondary};
     padding: 10px;
     &:hover {
       color: ${colors.secondary};
@@ -22,13 +27,14 @@ const StyledMenuItem = styled.span`
 
 export default function Menu() {
   const menuItems = [
-    { title: "Blog", route: "/" },
+    { title: "Articles", route: "/" },
+    { title: "Resources", route: "/resources" },
     { title: "About me", route: "/about-me" },
   ];
   return (
     <StyledMenuBar>
       {menuItems.map(({ title, route }) => (
-        <StyledMenuItem>
+        <StyledMenuItem key={title}>
           <Link to={route}>{title}</Link>
         </StyledMenuItem>
       ))}

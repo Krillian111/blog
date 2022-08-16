@@ -21,14 +21,14 @@ export default function Blogpost({ data }) {
 
 Blogpost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: {
+    markdownRemark: PropTypes.shape({
       html: PropTypes.string,
-      frontmatter: {
-        data: PropTypes.string,
+      frontmatter: PropTypes.shape({
+        date: PropTypes.string,
         slug: PropTypes.string,
         title: PropTypes.string,
-      },
-    },
+      }),
+    }),
   }).isRequired,
 };
 

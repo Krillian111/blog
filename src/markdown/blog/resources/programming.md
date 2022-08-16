@@ -1,12 +1,11 @@
 ---
 slug: "/blog/resources/programming"
-date: "2022-03-24"
-type: "blogpost"
-title: "Learning about programming"
+type: "resources"
+title: "Programming concepts"
 tags: ["architecture"]
 ---
 
-# Learning about programming
+# Programming concepts
 
 ## Beginner
 

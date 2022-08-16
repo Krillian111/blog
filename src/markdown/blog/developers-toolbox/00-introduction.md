@@ -1,12 +1,12 @@
 ---
 slug: "/blog/developers-toolbox/introduction"
-date: "2021-03-06"
+date: "2021-03-05"
 type: "blogpost"
-title: "Developers Toolbox Series"
-tags: ["developers toolbox"]
+title: "Developer's Toolbox Series (DT 0)"
+tags: ["developers-toolbox"]
 ---
 
-# Developers Toolbox Series
+# Developer's Toolbox Series (DT)
 
 ## Introduction
 
@@ -30,3 +30,5 @@ Obviously this is going to be opinionated. If you don't care about a particular 
 Last but not least: Be critical when you read my stuff. I cannot stress enough how imported it is, that you question what other people tell you about programming. The most frustrating people to work with are those, who insist on doing things a certain way, while having "duh, it's a best practice" as their only explanation.
 
 Develop your own opinion and learn to express why you hold that opinion. A lot of best practices are simply conventions to deal with the limitations of that time. If you don't know why you are doing something, it is easy to miss that it is outdated by now.
+
+[Developers Toolbox 1 - Handling collections](./handling-collections)
