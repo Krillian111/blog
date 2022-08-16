@@ -7,14 +7,14 @@ import colors from "../style/colors";
 const StyledArticle = styled.article`
   border-top-style: solid;
   border-top-width: 2px;
-  border-color: ${colors.highlight};
+  border-color: ${colors.highlightPrimary};
   h3 {
     color: ${colors.primary};
     text-decoration: underline;
   }
   &:hover {
     h3 {
-      color: ${colors.highlight};
+      color: ${colors.highlightPrimary};
     }
   }
   p {

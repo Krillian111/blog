@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${colors.secondary};
     fontfamily: -apple-system, Roboto, sans-serif, serif;
   }
+  a {
+    color: ${colors.highlightPrimary};
+    &:hover {
+      color: ${colors.highlightSecondary}
+    }
 `;
 
 const StyledMain = styled.main`

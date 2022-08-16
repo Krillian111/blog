@@ -15,14 +15,14 @@ const StyledMenuItem = styled.span`
     padding: 10px;
     &:hover {
       color: ${colors.secondary};
-      background-color: ${colors.highlight};
+      background-color: ${colors.highlightPrimary};
     }
   }
 `;
 
 export default function Menu() {
   const menuItems = [
-    { title: "Home", route: "/" },
+    { title: "Blog", route: "/" },
     { title: "About me", route: "/about-me" },
   ];
   return (
