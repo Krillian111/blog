@@ -1,5 +1,5 @@
 ---
-slug: "/blog/resources/javascript"
+slug: "/resources/javascript"
 type: "resources"
 title: "JavaScript and TypeScript"
 tags: ["javascript", "typescript", "node"]

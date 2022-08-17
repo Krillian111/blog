@@ -8,7 +8,6 @@ export default function IndexPage() {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "resources" } } }
-        limit: 15
       ) {
         edges {
           node {

@@ -1,5 +1,5 @@
 ---
-slug: "/blog/resources/architecture"
+slug: "/resources/architecture"
 type: "resources"
 title: "Web application architecture"
 tags: ["architecture"]

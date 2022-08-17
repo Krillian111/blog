@@ -9,7 +9,6 @@ export default function IndexPage() {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "blogpost" } } }
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 15
       ) {
         edges {
           node {

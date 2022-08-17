@@ -1,5 +1,5 @@
 ---
-slug: "/blog/resources/interviews"
+slug: "/resources/interviews"
 type: "resources"
 title: "Preaparing for interviews"
 tags: ["interviews"]

@@ -1,5 +1,5 @@
 ---
-slug: "/blog/resources/programming"
+slug: "/resources/programming"
 type: "resources"
 title: "Programming concepts"
 tags: ["architecture"]
