@@ -1,15 +1,9 @@
 # TODO
 
-## Coding
-
-- setup infrastructure
-
 ## Design
 
 - allow browsing by tag
-- syntax highlighting
 - pretty title bar
-- nicer font
 - clean up posts
 
 ## Posts
