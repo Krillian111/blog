@@ -28,8 +28,13 @@ tags: ["architecture"]
   - Nice theoretical basis for Kafka
   - Shows how the log as a data structure is embedded in almost all database solutions (one way or another)
 
+## Scalability
+
+- [How SQLite Scales Read Concurrency](https://fly.io/blog/sqlite-internals-wal/)
+  - Good explanation of the technical implementation of the write-ahead log (WAL) which allows separating reads from writes, thus allowing the database (SQLite in this case) to scale horizontally.
+
 ## Interesting thoughts
 
-- [Crash-only software: More than meets the eyeCrash-only software](https://lwn.net/Articles/191059/)
+- [Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)
   - Interesting article about the difference between software being able to shutdown gracefully and able to handle crashes and why it might makes sense to replace the former with the latter.
   - It also points out where a lot of people misunderstand the concept of crash-only software which leads to a misconceptions regarding this concept.
