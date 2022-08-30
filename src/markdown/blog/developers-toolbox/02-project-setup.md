@@ -13,7 +13,7 @@ tags: ["developers-toolbox", "backend"]
 When setting up a project, it is easy to miss a step or two as they are quite a few things to cover. These are language-agnostic basics that might already be built-in, need more or less configuration or can be combined. However, I haven't worked in a project long-term project where skipping any of these steps has turned out beneficial.
 For short-term projects, it is often a hard call which steps are worth it and often requires a short discussion with your teammates.
 
-Skipping any of this usually catches up with you later as the setup cost increases with the complexity of the project. It then forces you into a coversion with your PO/stakeholder why you need a day to configure a linter and fix all the problems. Depending on how the project is going, this might make them question your profesionalism.
+Skipping any of this usually catches up with you later as the setup cost increases with the complexity of the project. It then forces you into a conversation with your PO/stakeholder why you need a day to configure a linter and fix all the problems. Depending on how the project is going, this might make them question your professionalism.
 
 This is understandable as it is your job to anticipate stuff like this. When you hire a contractor for a week-long project and he realizes on the fifth day that he doesn't have a tool to finish the job, you would also get angry if this extends the whole project, possibly even charging you for the extra time.
 
@@ -21,7 +21,7 @@ This is understandable as it is your job to anticipate stuff like this. When you
 
 ### `.gitignore`
 
-Accidently commiting files is a pain for the reviewer and just sloppy. Update this when new artifacts are introduced by new libraries. This can also be used as an ignorefile for other commands, e.g. formatter.
+Accidentally committing files is a pain for the reviewer and just sloppy. Update this when new artifacts are introduced by new libraries. This can also be used as an ignorefile for other commands, e.g. formatter.
 
 ### Formatter
 
@@ -31,7 +31,7 @@ Example: prettier
 
 ### Linter
 
-Configure it and enforce it everywhere. Configure your IDE to display visual warnings when you violate a linter rule. Especially with languages that have different syntax to solve the same task, it helps keeing the code consistent which is important as we spend more time reading than writing code. Fail on warnings or convert them to errors. A codebase littered with warnings causes everyone to ignore warnings. Keep the exceptions to an absolute minimum or add the exceptions to the linter config.
+Configure it and enforce it everywhere. Configure your IDE to display visual warnings when you violate a linter rule. Especially with languages that have different syntax to solve the same task, it helps keeping the code consistent which is important as we spend more time reading than writing code. Fail on warnings or convert them to errors. A codebase littered with warnings causes everyone to ignore warnings. Keep the exceptions to an absolute minimum or add the exceptions to the linter config.
 
 Example: eslint
 
@@ -43,7 +43,7 @@ Example: jest, tap
 
 ### Build scripts
 
-Build script: A script which creates a runnable artifact, assuming the repository was freshly cloned. This is important for the build pipelin, dockerizing and to identify missing pieces in the packaging process early on.
+Build script: A script which creates a runnable artifact, assuming the repository was freshly cloned. This is important for the build pipeline, dockerizing and to identify missing pieces in the packaging process early on.
 
 Examples: npm scripts, bash script, Github workflows file, ...
 
@@ -87,4 +87,4 @@ Configure a tool that runs regularly, e.g. every 1-2 weeks and creates a Pull Re
 
 Make sure to include ALL dependencies, i.e. also the runtime environment, the base container, database engine etc.
 
-Example: renovatebot
+Example: renovatebot, dependabot
