@@ -2,7 +2,7 @@
 slug: "/blog/developers-toolbox/introduction"
 date: "2021-03-05"
 type: "blogpost"
-title: "Developer's Toolbox Series (DT 0)"
+title: "DT 0: Developer's Toolbox Series "
 tags: ["developers-toolbox"]
 ---
 

@@ -2,7 +2,7 @@
 slug: "/blog/developers-toolbox/handling-collections"
 date: "2021-03-06"
 type: "blogpost"
-title: "Handling collections (DT 1)"
+title: "DT 1: Handling collections"
 tags: ["functional-programming", "developers-toolbox"]
 ---
 

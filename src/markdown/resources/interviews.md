@@ -1,13 +1,13 @@
 ---
 slug: "/resources/interviews"
 type: "resources"
-title: "Preaparing for interviews"
+title: "Preparing for interviews"
 tags: ["interviews"]
 ---
 
 # Preparing for interviews
 
-## Tipps by hiring managers
+## Tips by hiring managers
 
 - [FAQs for a Software Enginnering Hiring Manager](https://blog.alishahnovin.com/2022/07/faqs-of-software-engineering-hiring.html?m=1)
   - Good list of questions and answers revolving around the entire hiring process and what to focus on

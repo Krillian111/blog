@@ -2,7 +2,7 @@
 slug: "/blog/developers-toolbox/project-setup"
 date: "2022-01-24"
 type: "blogpost"
-title: "Backend project checklist (DT 2)"
+title: "DT 2: Backend project checklist"
 tags: ["developers-toolbox", "backend"]
 ---
 
