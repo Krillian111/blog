@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import PageTemplate from "./page-template";
 
-export default function Blogpost({ data }) {
+export default function Article({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
@@ -19,7 +19,7 @@ export default function Blogpost({ data }) {
   );
 }
 
-Blogpost.propTypes = {
+Article.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       html: PropTypes.string,

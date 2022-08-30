@@ -1,6 +1,6 @@
 ---
 slug: "/resources/architecture"
-type: "resources"
+type: "resource"
 title: "Web application architecture"
 tags: ["architecture"]
 ---
@@ -37,4 +37,4 @@ tags: ["architecture"]
 
 - [Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)
   - Interesting article about the difference between software being able to shutdown gracefully and able to handle crashes and why it might makes sense to replace the former with the latter.
-  - It also points out where a lot of people misunderstand the concept of crash-only software which leads to a misconceptions regarding this concept.
+  - It also points out where a lot of people misunderstand the concept of crash-only software which leads to misconceptions regarding this concept.

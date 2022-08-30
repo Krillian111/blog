@@ -1,6 +1,6 @@
 ---
 slug: "/resources/programming"
-type: "resources"
+type: "resource"
 title: "Programming concepts"
 tags: ["architecture"]
 ---

@@ -3,10 +3,9 @@
 ## Design
 
 - allow browsing by tag
-- pretty title bar
-- clean up posts
+- make top bar prettier
 
-## Posts
+## Posts to write
 
 - CLI Tools
   - grep

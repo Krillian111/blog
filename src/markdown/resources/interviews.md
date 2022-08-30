@@ -1,6 +1,6 @@
 ---
 slug: "/resources/interviews"
-type: "resources"
+type: "resource"
 title: "Preparing for interviews"
 tags: ["interviews"]
 ---

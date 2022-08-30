@@ -1,6 +1,6 @@
 ---
 slug: "/resources/javascript"
-type: "resources"
+type: "resource"
 title: "JavaScript and TypeScript"
 tags: ["javascript", "typescript", "node"]
 ---

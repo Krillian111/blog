@@ -3,10 +3,10 @@ slug: "/blog/developers-toolbox/handling-collections"
 date: "2021-03-06"
 type: "blogpost"
 title: "DT 1: Handling collections"
-tags: ["functional-programming", "developers-toolbox"]
+tags: ["developers-toolbox", "functional-programming"]
 ---
 
-# Developers Toolbox 1 - Handling collections
+# Developer's Toolbox 1 - Handling collections
 
 ## Introduction
 

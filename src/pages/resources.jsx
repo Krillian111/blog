@@ -3,12 +3,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import ArticleList from "../components/article-list";
 import PageTemplate from "../components/template/page-template";
 
-export default function IndexPage() {
+export default function Resources() {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "resources" } } }
-      ) {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "resource" } } }) {
         edges {
           node {
             frontmatter {
@@ -31,7 +29,7 @@ export default function IndexPage() {
   return (
     <PageTemplate>
       <section>
-        <h1>Resources</h1>
+        <h1>Reading Lists</h1>
         <p>
           These pages contain articles, blog posts, talks etc. regarding
           software engineering topics that I read / listened to myself and found

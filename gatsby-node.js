@@ -1,12 +1,12 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogTemplate = require.resolve(
-    "./src/components/template/blogpost.jsx"
-  );
+  const blogTemplate = require.resolve("./src/components/template/article.jsx");
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { type: { in: ["blogpost", "resources"] } } }
+        filter: {
+          frontmatter: { type: { in: ["blogpost", "resource", "project"] } }
+        }
         sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         edges {
@@ -19,7 +19,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `);
-  // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(
       `Error while running GraphQL query.: ${JSON.stringify(result.errors)}`

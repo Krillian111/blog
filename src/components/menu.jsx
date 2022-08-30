@@ -25,15 +25,18 @@ const StyledMenuItem = styled.span`
   }
 `;
 
+export const menuLinks = {
+  blog: { title: "Blog", route: "/" },
+  resources: { title: "Reading Lists", route: "/resources" },
+  projects: { title: "Projects", route: "/projects" },
+  aboutMe: { title: "About me", route: "/about-me" },
+};
+
 export default function Menu() {
-  const menuItems = [
-    { title: "Blog", route: "/" },
-    { title: "Reading Lists", route: "/resources" },
-    { title: "About me", route: "/about-me" },
-  ];
+  const links = Object.values(menuLinks);
   return (
     <StyledMenuBar>
-      {menuItems.map(({ title, route }) => (
+      {links.map(({ title, route }) => (
         <StyledMenuItem key={title}>
           <Link to={route}>{title}</Link>
         </StyledMenuItem>

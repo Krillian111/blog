@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import PageTemplate from "../components/template/page-template";
 
-const AboutMe = () => {
+export default function AboutMe() {
   const data = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { slug: { eq: "/about-me" } }) {
@@ -19,6 +19,4 @@ const AboutMe = () => {
       />
     </PageTemplate>
   );
-};
-
-export default AboutMe;
+}
