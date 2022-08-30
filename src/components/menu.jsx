@@ -29,6 +29,7 @@ export const menuLinks = {
   blog: { title: "Blog", route: "/" },
   resources: { title: "Reading Lists", route: "/resources" },
   projects: { title: "Projects", route: "/projects" },
+  ideas: { title: "Ideas", route: "/ideas" },
   aboutMe: { title: "About me", route: "/about-me" },
 };
 

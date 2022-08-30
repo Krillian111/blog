@@ -5,7 +5,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMarkdownRemark(
         filter: {
-          frontmatter: { type: { in: ["blogpost", "resource", "project"] } }
+          frontmatter: {
+            type: { in: ["blogpost", "resource", "project", "idea"] }
+          }
         }
         sort: { order: DESC, fields: [frontmatter___date] }
       ) {
