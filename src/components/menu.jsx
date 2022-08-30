@@ -28,7 +28,7 @@ const StyledMenuItem = styled.span`
 export default function Menu() {
   const menuItems = [
     { title: "Blog", route: "/" },
-    { title: "Resources", route: "/resources" },
+    { title: "Reading Lists", route: "/resources" },
     { title: "About me", route: "/about-me" },
   ];
   return (
