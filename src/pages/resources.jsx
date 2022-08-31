@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import ArticleList from "../components/article-list";
 import PageTemplate from "../components/template/page-template";
+import { menuLinks } from "../components/menu";
 
 export default function Resources() {
   const data = useStaticQuery(graphql`
@@ -27,7 +28,7 @@ export default function Resources() {
       tags,
     }));
   return (
-    <PageTemplate>
+    <PageTemplate currentRoute={menuLinks.resources.route}>
       <section>
         <h1>Reading Lists</h1>
         <p>

@@ -1,5 +1,7 @@
+// @ts-nocheck
 import React from "react";
 import { Link } from "gatsby";
+import * as PropTypes from "prop-types";
 import styled from "styled-components";
 import colors from "../style/colors";
 
@@ -14,9 +16,10 @@ const StyledMenuBar = styled.nav`
 const StyledMenuItem = styled.span`
   a {
     font-size: 20px;
-    color: ${colors.primary};
+    color: ${({ active }) => (active ? colors.secondary : colors.primary)};
     text-decoration: none;
-    background-color: ${colors.secondary};
+    background-color: ${({ active }) =>
+      active ? colors.highlightPrimary : colors.secondary};
     padding: 10px;
     &:hover {
       color: ${colors.secondary};
@@ -33,15 +36,19 @@ export const menuLinks = {
   aboutMe: { title: "About me", route: "/about-me" },
 };
 
-export default function Menu() {
+export default function Menu({ currentRoute }) {
   const links = Object.values(menuLinks);
   return (
     <StyledMenuBar>
       {links.map(({ title, route }) => (
-        <StyledMenuItem key={title}>
+        <StyledMenuItem key={title} active={currentRoute === route}>
           <Link to={route}>{title}</Link>
         </StyledMenuItem>
       ))}
     </StyledMenuBar>
   );
 }
+
+Menu.propTypes = {
+  currentRoute: PropTypes.string.isRequired,
+};

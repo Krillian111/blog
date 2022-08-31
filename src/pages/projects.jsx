@@ -28,7 +28,7 @@ export default function Projects() {
       tags,
     }));
   return (
-    <PageTemplate>
+    <PageTemplate currentRoute={menuLinks.projects.route}>
       <section>
         <h1>Projects</h1>
         <p>

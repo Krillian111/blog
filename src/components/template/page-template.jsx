@@ -41,12 +41,12 @@ const StyledMain = styled.main`
   margin-right: auto;
 `;
 
-export default function PageTemplate({ children }) {
+export default function PageTemplate({ children, currentRoute }) {
   return (
     <StyledMain>
       <title>Krillian&apos;s Blog</title>
       <GlobalStyle />
-      <Menu />
+      <Menu currentRoute={currentRoute} />
       {children}
     </StyledMain>
   );
@@ -54,4 +54,5 @@ export default function PageTemplate({ children }) {
 
 PageTemplate.propTypes = {
   children: PropTypes.node.isRequired,
+  currentRoute: PropTypes.string.isRequired,
 };

@@ -4,7 +4,7 @@ slug: "/about-me"
 
 # About me
 
-- Fullstack developer from Germany with a preference for Backend and DevOps. I don't enjoy designing UIs - I am not good at it but I am happy to realize a Designers vision.
+- Fullstack developer from Germany with a preference for Backend and DevOps. I am happy to realize a UI Designer's visions if necessary but it's not my strength.
 - Moved to the US in 2021.
 - Got into programming during an undergrad internship in 2014. Continued to develop web applications during my graduate degree in mathematics. Never looked back.
 - I like getting to the bottom of things. I don't get frustrated easily when things get more complicated. Reading specifications or documentation is the main way I learn things, not a big fan of just superficially learning from videos or StackOverflow. They are more an inspiration to find good sources and clarify ambiguity of terminology.

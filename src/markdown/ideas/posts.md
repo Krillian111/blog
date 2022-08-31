@@ -25,6 +25,7 @@ title: "Blogposts"
 - event loop (JS)
 - file descriptor/stdin/stdout/stderr
 - docker
+  - hadolint
 
 ## Tool spotlight
 
