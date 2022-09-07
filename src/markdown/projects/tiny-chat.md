@@ -29,7 +29,7 @@ Inspired by [tinyprojects.dev](https://tinyprojects.dev/) I wanted to build a ve
   - (+) built-in logging, schema-based validation, websocket support
   - (+) plugin system enables nicely modularized code
   - (?) the built-in test functionality with `fastify.inject` looks like an interesting middle ground between unit tests and tests with a running server. It feels like I am duplicating my integration tests without getting the assurance of having tested actually calling my API, so I skipped it for now.
-    (-) fastify's websocket integration only seems to support the native `message` event and not custom events like the underlying `ws` library does
+  - (-) fastify's websocket integration only seems to support the native `message` event and not custom events like the underlying `ws` library does
 - only write integration tests (skip unit tests) to see whether this is a decent compromise for prototyping
   - (+) makes it very easy to shift around things
   - (-) finding reason for a single test failing can be a bit more tedious

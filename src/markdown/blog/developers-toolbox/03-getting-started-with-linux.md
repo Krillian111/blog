@@ -11,6 +11,7 @@ tags: ["developers-toolbox", "linux", "cli"]
 ## Preface
 
 Switching to working on Linux (from Windows to Ubuntu - okay Mr Arch, go ahead and sigh if you must :p) and avoiding GUI tools as best as I can was one of the best decisions I've ever made as a young professional. I want to share my experiences and also try to compile a list of things I consider essential when starting out. It's probably going to be multiple posts, even though they most likely will not appear back to back.
+
 I am by no means an expert but I got far enough to be able to do my job properly without just blindly copying stuff from StackOverflow, e.g. write build and deployment scripts, scan log files with a lot of lines, configure cron jobs, find that zombie app that is still using port 8000 etc.
 
 ## Introduction
