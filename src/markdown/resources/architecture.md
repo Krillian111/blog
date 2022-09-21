@@ -32,6 +32,8 @@ tags: ["architecture"]
 
 - [How SQLite Scales Read Concurrency](https://fly.io/blog/sqlite-internals-wal/)
   - Good explanation of the technical implementation of the write-ahead log (WAL) which allows separating reads from writes, thus allowing the database (SQLite in this case) to scale horizontally.
+- [CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan](https://youtu.be/-W9F__D3oY4)
+  - A bit older but solid lecture on the basics of scalability in distributed systems
 
 ## Interesting thoughts
 
