@@ -8,10 +8,12 @@ title: "Blogposts"
 
 ## CLI Basics
 
-- grep
-- awk
-- curl
-- tail/head
+- shebangs `#!/bin/bash`
+- `set -e` in shell scripts
+- `grep`
+- `awk`
+- `curl
+- `tail` / `head`
 - Ubuntu examples
   - What is the IP of the docker host from the PoV of a container?
     - `ifconfig | grep -A1 docker | tail -n1 | awk '{print $2}'`
