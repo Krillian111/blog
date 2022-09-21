@@ -2,25 +2,29 @@
 slug: "/blog/developers-toolbox/getting-started-with-linux"
 date: "2022-09-07"
 type: "blogpost"
-title: "DT 3: Getting started with Linux"
+title: "DT 3: Linux - Work with what your code runs on"
 tags: ["developers-toolbox", "linux", "cli"]
 ---
 
-# Developer's Toolbox 3 - Getting started with linux
+# Developer's Toolbox 3 - Linux - Work with what your code runs on
 
 ## Preface
 
-Switching to working on Linux (from Windows to Ubuntu - okay Mr Arch, go ahead and sigh if you must :p) and avoiding GUI tools as best as I can was one of the best decisions I've ever made as a young professional. I want to share my experiences and also try to compile a list of things I consider essential when starting out. It's probably going to be multiple posts, even though they most likely will not appear back to back.
+I fully switched from Windows to Linux (Ubuntu) a few years back. This by itself was such an eye opening experience and it helped me so much along the way because I no longer had to maintain the behavior of two different OS' in my head. If some script I hacked together worked on my machine, chances were good that it would work on the CI/CD environment and the final deployment target because most of the cloud runs on some kind of Linux distribution. This argument most likely applies the other way if you end up deploying on Windows Server.
+
+MacOS is an interesting one in this debate. You are definitely closer to your target architecture if you deploy on Linux. You have nicer and shinier tools when compared to any Linux Distro, hardware support is probably better but you will run into discrepancies. A good example is the fact that [Docker for MacOS works fundamentally different under the hood](https://dev.to/ericnograles/why-is-docker-on-macos-so-much-worse-than-linux-flh). However, I don't have much experience with it and know enough competent developers that love it. So, to each their own.
+
+I can also recommend to minimize the GUI tools you use. As an example, if you start out managing your local docker containers for development with a GUI instead of the CLI, you will miss a lot of nuances. If you are already well versed in Docker, you can obviously go ahead and use a GUI but then you are most likely not going to use it anyway.
+
+A lot of new developers, especially if they didn't start out studying Computer Science, have a hard time with Linux. As I started out in the same camp, I want to share my experiences and also try to compile a list of things I consider important in the beginning. It's probably going to be multiple posts.
 
 I am by no means an expert but I got far enough to be able to do my job properly without just blindly copying stuff from StackOverflow, e.g. write build and deployment scripts, scan log files with a lot of lines, configure cron jobs, find that zombie app that is still using port 8000 etc.
 
-## Introduction
+## Dive deeper when you get stuck
 
-I didn't get much exposure to linux during college and also worked a while at a company / team which was using Windows and a very GUI-based development process which was maintained by the senior engineers. This lead to a lot of things being kind of "black magic" to me when working as a Junior. I never liked that feeling but once I noticed it actually held me back understanding more complex topics, I did a hard reset, installed Ubuntu (good to get started IMO) on my private laptop and also started using it at work.
+Whenever you get stuck somewhere, don't understand a required argument you have to provide or can't do a certain task because you used to do it with the GUI, I encourage you to take the time and dive deeper. Sometimes this leads down the rabbit hole but more often than not, it helps making sense of so much more than just the thing you were just looking at.
 
-Whenever I got stuck somewhere, I took the time to read up on it and learned many valuable lessons. The first one was that GUIs are nice as long as everything is on the "happy path" but once something goes wrong, the terminal (or more precisely the shell) is the only tool that can reliably help you out. A lot of technical tools don't have a GUI and once you run software on a server or in the almighty cloud, you will need to understand the nuances, otherwise not returning a proper exit code in your deployment script can send you down debugging rabbit hole for hours if not days.
-
-But first things first, lets start with some basic day-to-day stuff and talk about the concepts they expose you as a fresh linux user. Note that most of these concepts also exist in other operating systems, it's just easier to ignore that they exist.
+I will mostly just provide a list of common tasks and commands to achieve them and what kind of questions I asked myself over the years. This hopefully illustrates the mind set that I am trying to describe.
 
 ## Navigating
 
