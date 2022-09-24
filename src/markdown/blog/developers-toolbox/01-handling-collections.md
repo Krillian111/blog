@@ -6,7 +6,7 @@ title: "DT 1: Handling collections"
 tags: ["developers-toolbox", "functional-programming"]
 ---
 
-# Developer's Toolbox 1 - Handling collections
+# Developer's Toolbox 1: Handling collections
 
 ## Introduction
 

@@ -6,9 +6,9 @@ title: "DT 3: Linux - Work with what your code runs on"
 tags: ["developers-toolbox", "linux", "cli"]
 ---
 
-# Developer's Toolbox 3 - Linux - Work with what your code runs on
+# Developer's Toolbox 3: Linux - Work with what your code runs on
 
-## Preface
+## Introduction
 
 I fully switched from Windows to Linux (Ubuntu) a few years back. This by itself was such an eye opening experience and it helped me so much along the way because I no longer had to maintain the behavior of two different OS' in my head. If some script I hacked together worked on my machine, chances were good that it would work on the CI/CD environment and the final deployment target because most of the cloud runs on some kind of Linux distribution. This argument most likely applies the other way if you end up deploying on Windows Server.
 

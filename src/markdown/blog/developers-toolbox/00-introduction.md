@@ -6,9 +6,7 @@ title: "DT 0: Developer's Toolbox Series"
 tags: ["developers-toolbox"]
 ---
 
-# Developer's Toolbox Series
-
-## Introduction
+# Developer's Toolbox Series 0: Introduction
 
 When I started out as a software developer I had a hard time to figure out what to learn first. I had only so much time and wanted to spend it wisely. There are so many topics where you feel a bit lost in the beginning:
 

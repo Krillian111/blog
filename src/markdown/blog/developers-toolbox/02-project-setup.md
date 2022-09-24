@@ -6,7 +6,7 @@ title: "DT 2: Backend project checklist"
 tags: ["developers-toolbox", "backend"]
 ---
 
-# Developer's Toolbox 2 - Backend project checklist
+# Developer's Toolbox 2: Backend project checklist
 
 ## Why do we need a checklist?
 

@@ -37,10 +37,9 @@ export default function BlogPosts() {
       <section>
         <h1>Blog</h1>
         <p>
-          Blogposts I wrote myself to practice writing and once I am satisfied
-          with the quality it would be nice to link these articles to juniors /
-          trainees when they are struggling with a topic that I already covered.
-          I am starting with very simple stuff to iron out the kinks first.
+          Tech-related blog posts about very simple topics to practice writing
+          which is very much a skill of its own. Before I dive into anything
+          more complex I need to make them less verbose. Practice makes perfect.
         </p>
         <ArticleList articles={blogposts} />
       </section>
