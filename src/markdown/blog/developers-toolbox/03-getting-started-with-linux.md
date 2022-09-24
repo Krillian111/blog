@@ -14,9 +14,9 @@ I fully switched from Windows to Linux (Ubuntu) a few years back. This by itself
 
 MacOS is an interesting one in this debate. You are definitely closer to your target architecture if you deploy on Linux. You have nicer and shinier tools when compared to any Linux Distro, hardware support is probably better but you will run into discrepancies. A good example is the fact that [Docker for MacOS works fundamentally different under the hood](https://dev.to/ericnograles/why-is-docker-on-macos-so-much-worse-than-linux-flh). However, I don't have much experience with it and know enough competent developers that love it. So, to each their own.
 
-I can also recommend to minimize the GUI tools you use. As an example, if you start out managing your local docker containers for development with a GUI instead of the CLI, you will miss a lot of nuances. If you are already well versed in Docker, you can obviously go ahead and use a GUI but then you are most likely not going to use it anyway.
+I can also recommend to minimize the GUI tools you use. As an example, if you start out managing your local docker containers for development with a GUI instead of the CLI, you will miss a lot of nuances. If you are already well versed in docker, you can obviously go ahead and use a GUI but then you are most likely not going to use it anyway.
 
-A lot of new developers, especially if they didn't start out studying Computer Science, have a hard time with Linux. As I started out in the same camp, I want to share my experiences and also try to compile a list of things I consider important in the beginning. It's probably going to be multiple posts.
+A lot of new developers, especially if they didn't start out studying Computer Science, have a hard time with Linux. As I also only had limited contact during my Minor in CS, I want to share my experiences and also try to compile a list of things I consider important in the beginning. It's probably going to be multiple posts.
 
 I am by no means an expert but I got far enough to be able to do my job properly without just blindly copying stuff from StackOverflow, e.g. write build and deployment scripts, scan log files with a lot of lines, configure cron jobs, find that zombie app that is still using port 8000 etc.
 
