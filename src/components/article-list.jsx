@@ -7,9 +7,10 @@ import colors from "../style/colors";
 const StyledArticle = styled.article`
   border-top-style: solid;
   border-top-width: 1px;
-  border-color: ${colors.highlightPrimary};
+  border-color: ${colors.primary};
   a {
-    h2 {
+    h3 {
+      font-weight: normal;
       &:hover {
         color: ${colors.highlightSecondary};
       }
@@ -35,7 +36,7 @@ export default function ArticleList({ articles }) {
       {articles.map(({ route, title, date, tags }) => (
         <StyledArticle key={route}>
           <Link to={route}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
           </Link>
           <p>
             {tags && <span>{tags.map((tag) => `#${tag}`).join(", ")}</span>}

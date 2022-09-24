@@ -16,19 +16,20 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   h3 {
     font-size: 22px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
-  p {
-    font-size: 16px;
+  p,li,ul {
+    font-size: 18px;
+    line-height: 1.5;
   }
 `;
 
