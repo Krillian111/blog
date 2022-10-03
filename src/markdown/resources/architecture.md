@@ -35,6 +35,12 @@ tags: ["architecture"]
 - [CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan](https://youtu.be/-W9F__D3oY4)
   - A bit older but solid lecture on the basics of scalability in distributed systems
 
+## Maintenance & Deployments
+
+- [Blue/Green Deployments on AWS](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html)
+  - The attached PDF gives a good first overview of the basic idea and what to consider when doing blue/green deployments.
+  - It also provides some suggestions at which level blue/green deployments can be achieved, e.g. DNS, Loadbalancer or Auto Scaling Groups. Even though they are AWS specific, the general idea still applies in different environments.
+
 ## Interesting thoughts
 
 - [Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)
