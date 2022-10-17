@@ -9,7 +9,7 @@ tags: ["interviews"]
 
 ## Tips by hiring managers
 
-- [FAQs for a Software Enginnering Hiring Manager](https://blog.alishahnovin.com/2022/07/faqs-of-software-engineering-hiring.html?m=1)
+- [FAQs for a Software Engineering Hiring Manager](https://blog.alishahnovin.com/2022/07/faqs-of-software-engineering-hiring.html?m=1)
   - Good list of questions and answers revolving around the entire hiring process and what to focus on
 
 ## Blogs

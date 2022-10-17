@@ -18,6 +18,9 @@ tags: ["network"]
 
 ## Practical guides
 
+- [Difference between HTTP/1.1 and HTTP/2](https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference)
+  - Nice summary of the major difference between the two protocol versions and what limitations HTTP/1.1 has by design.
+  - It also makes it clear that HTTP/2 most likely requires a bit more tinkering to get full use out of it.
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/#client-server-background)
   - Unix network programming basics
   - I don't know any C but I could still take away a lot by just reading it. It gives you a basic understanding what higher level languages do in order to come up with the convenience APIs they provide you with. You don't have to read all of it. Later in the guide it goes into quite some details w.r.t the APIs which I personally skipped.
